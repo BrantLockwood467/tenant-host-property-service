@@ -1,0 +1,25 @@
+{
+  "name": "tenant-host-property-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "setup": "tsx src/setup-storage.ts",
+    "dev": "tsx src/property-service.ts",
+    "start": "tsx src/property-service.ts",
+    "test": "tsx --test test/tenant-model.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT"
+}
